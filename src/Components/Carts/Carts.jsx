@@ -1,8 +1,11 @@
 
-import { use } from "react";
+import { use, useState } from "react";
 import Cart from "./Cart/Cart";
+import BuyCart from "../BuyCart/BuyCart";
 
-const Carts = ({ datas }) => {
+const Carts = ({ datas ,buyItem,setBuyItem }) => {
+
+    const [activeTab, setActiveTab] = useState("products")
 
     const digitalToolSData = use(datas);
 
@@ -12,24 +15,36 @@ const Carts = ({ datas }) => {
                 <h1 className="text-4xl font-bold">Premium Digital Tools</h1>
                 <p className="mb-4 mt-3" >Choose from our curated collection of premium digital products designed
                     to boost your productivity and creativity.</p>
-                
+
                 <div className="tabs tabs-box mt-10">
-                    <input  type="radio" name="my_tabs_6" className="tab text-2xl font-bold
+
+
+                    <input
+                    onClick={()=>activeTab("products")}
+                    type="radio" name="my_tabs_6" className="tab text-2xl font-bold
                      mr-4 text-white btn bg-[#6107ec]" aria-label="Products" defaultChecked />
-                    
 
-                    <input type="radio" name="my_tabs_6" className="tab text-2xl font-bold" aria-label="Cart()"  />
-                    
 
-                    
+                    <input 
+                     onClick={()=> setActiveTab("cart")}
+                    type="radio" name="my_tabs_6" className="tab text-2xl font-bold" aria-label={`Cart(${buyItem.length})`} />
+
+
+
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mt-10">
+            {
+             activeTab === "products" && <div className="grid grid-cols-3 gap-4 mt-10">
                 {
-            digitalToolSData.map((data)=><Cart data={data} key={data.id}></Cart>)
-            }
+                    digitalToolSData.map((data) => <Cart buyItem={buyItem} setBuyItem={setBuyItem} data={data} key={data.id}></Cart>)
+                }
             </div>
+            }
+           {
+           activeTab === "cart" && <BuyCart></BuyCart>
+           }
+
         </div>
     );
 };

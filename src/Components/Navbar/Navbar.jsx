@@ -1,6 +1,6 @@
 import React from 'react';
 import shopingCart from "../../assets/products/shopping-cart.png"
-const Navbar = () => {
+const Navbar = ({buyItem}) => {
     return (
         <div className="navbar bg-base-100 shadow-sm w-11/12 mx-auto mt-10">
             <div className="navbar-start">
@@ -34,7 +34,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <img className='mr-3 w-[30px]' src={shopingCart} alt="" />
+                <span>{buyItem.length}</span>
+                <img className='mr-3 w-[30px]' src={shopingCart}   alt="" />
                 <a className="btn">Login</a>
                 <button className='btn btn-primary ml-3'>Get Started</button>
             </div>

@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Cart = ({ data }) => {
-    console.log(data)
+const Cart = ({ data,buyItem,setBuyItem }) => {
+    
+    const [isBuy,setBuy] = useState(false);
+
+    const handleBuyButton =()=>{
+        setBuy(true);
+        setBuyItem([...buyItem,data])
+
+
+    }
     return (
         <div >
             <div className="card w-96 bg-base-100 shadow-xl border border-base-300 overflow-hidden relative">
@@ -36,8 +44,8 @@ const Cart = ({ data }) => {
 
                     {
 
-                        data.features.map((feature => <div className="flex items-center gap-3">
-                            <div className="text-green-500 text-xl">✓</div>
+                        data.features.map(((feature, idx) => <div key={idx} className="flex items-center gap-3">
+                            <div  className="text-green-500 text-xl">✓</div>
                             <span className="text-base-content/80">{feature}</span>
                         </div>))
                     }
@@ -50,8 +58,8 @@ const Cart = ({ data }) => {
 
                    
                     <div className="card-actions mt-8">
-                        <button className="btn btn-primary w-full text-lg font-semibold h-14 rounded-2xl">
-                            Buy Now
+                        <button onClick={handleBuyButton} className="btn btn-primary w-full text-lg font-semibold h-14 rounded-2xl">
+                          {isBuy ? "Brouthed" :"Buy Now"}
                         </button>
                     </div>
                 </div>
