@@ -8,7 +8,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "file-text"
+  "icon": "https://i.ibb.co/xKpHV9Q0/design-tool.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Custom domains", "SEO optimized", "Responsive design"],
-    "icon": "globe"
+    "icon": "https://i.ibb.co.com/qFk39ptj/operation.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Mock interviews", "Instant feedback", "Question bank"],
-    "icon": "message-circle"
+    "icon": "https://i.ibb.co.com/7NRxcJXS/social-media.png"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Application tracking", "Reminders", "Analytics dashboard"],
-    "icon": "check-square"
+    "icon": "https://i.ibb.co.com/Ly4frqc/writing-2327400-1.png"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["AI writing", "Custom templates", "Easy editing"],
-    "icon": "edit"
+    "icon": "https://i.ibb.co.com/xKpHV9Q0/design-tool.png"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Timed tests", "Detailed reports", "Multiple categories"],
-    "icon": "bar-chart"
+    "icon": "https://i.ibb.co.com/7NRxcJXS/social-media.png"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Proposal templates", "Client management", "Invoice system"],
-    "icon": "briefcase"
+    "icon": "https://i.ibb.co.com/Ly4frqc/writing-2327400-1.png"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Profile analysis", "Keyword suggestions", "Visibility boost"],
-    "icon": "linkedin"
+    "icon": "https://i.ibb.co.com/7NRxcJXS/social-media.png"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Daily problems", "Solutions", "Leaderboard"],
-    "icon": "code"
+    "icon": "https://i.ibb.co.com/ynBczWRJ/portfolio.png"
   },
   {
     "id": 10,
@@ -107,6 +107,6 @@
     "tag": "best seller",
     "tagType": "best seller",
     "features": ["Unlimited downloads", "High-quality assets", "Regular updates"],
-    "icon": "layers"
+    "icon": "https://i.ibb.co.com/qFk39ptj/operation.png"
   }
 ]
