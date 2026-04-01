@@ -21,7 +21,7 @@ const Cart = ({ data,buyItem,setBuyItem }) => {
     }
     return (
         <div >
-            <div className="card w-96 bg-base-100 shadow-xl border border-base-300 overflow-hidden relative">
+            <div className="card w-96 h-[600px] bg-base-100 shadow-xl border border-base-300 overflow-hidden relative">
                
                 <div className="absolute top-4 right-4">
                     <div className="badge badge-primary badge-lg font-medium p-4 ">

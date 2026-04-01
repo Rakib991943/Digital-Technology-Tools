@@ -35,7 +35,7 @@ const Carts = ({ datas ,buyItem,setBuyItem }) => {
             </div>
 
             {
-             activeTab === "products" && <div className="grid grid-cols-3 gap-4 mt-10">
+             activeTab === "products" && <div className="grid md:grid-cols-3 gap-4 mt-10">
                 {
                     digitalToolSData.map((data) => <Cart buyItem={buyItem} setBuyItem={setBuyItem} data={data} key={data.id}></Cart>)
                 }

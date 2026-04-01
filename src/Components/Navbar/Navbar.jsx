@@ -19,7 +19,7 @@ const Navbar = ({ buyItem }) => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <a className="text-3xl font-bold text-purple-600">
+                <a className="text-3xl hidden md:block font-bold text-purple-600">
                     Digi<span className="text-gray-800">Tools</span>
                 </a>
             </div>
