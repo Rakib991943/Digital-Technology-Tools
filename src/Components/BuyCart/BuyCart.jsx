@@ -6,6 +6,7 @@ const BuyCart = ({buyItem,setBuyItem}) => {
  
     const handleProcedButton=()=>{
         setBuyItem([])
+        toast("Proced ALl Carts !")
     }
 
     const handleDeleteButton =(name)=>{
