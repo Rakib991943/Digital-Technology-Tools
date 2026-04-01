@@ -20,14 +20,14 @@ const Carts = ({ datas ,buyItem,setBuyItem }) => {
 
 
                     <input
-                    onClick={()=>activeTab("products")}
-                    type="radio" name="my_tabs_6" className="tab text-2xl font-bold
-                     mr-4 text-white btn bg-[#6107ec]" aria-label="Products" defaultChecked />
+                    onClick={()=>setActiveTab("products")} 
+                    type="radio" name="my_tabs_6" className={`tab text-2xl font-bold
+                     mr-4  btn  ${activeTab === "products" ? "bg-[#6107ec]" :"" } `} aria-label="Products" defaultChecked />
 
 
                     <input 
                      onClick={()=> setActiveTab("cart")}
-                    type="radio" name="my_tabs_6" className="  tab text-2xl font-bold" aria-label={`Cart(${buyItem.length})`} />
+                    type="radio" name="my_tabs_6" className={ `   tab text-2xl font-bold  ${activeTab === "cart" ? "bg-[#6107ec]" :"" }`} aria-label={`Cart(${buyItem.length})`} />
 
 
 
