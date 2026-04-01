@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ data,buyItem,setBuyItem }) => {
     
     const [isBuy,setBuy] = useState(false);
 
-    const handleBuyButton =()=>{
+    const handleBuyButton =(name)=>{
         setBuy(true);
+        const isExisting = buyItem.find(item => item.id === data.id);
+        
+        if (isExisting) {
+            toast("Already added!");
+            return;
+        }
+        toast(`${name} is Added to Cart`)
         setBuyItem([...buyItem,data])
+
 
 
     }
@@ -58,7 +67,7 @@ const Cart = ({ data,buyItem,setBuyItem }) => {
 
                    
                     <div className="card-actions mt-8">
-                        <button onClick={handleBuyButton} className="btn btn-primary w-full text-lg font-semibold h-14 rounded-2xl">
+                        <button onClick={()=>handleBuyButton(data.name)} className="btn btn-primary w-full text-lg font-semibold h-14 rounded-2xl">
                           {isBuy ? "Brouthed" :"Buy Now"}
                         </button>
                     </div>

@@ -27,7 +27,7 @@ const Carts = ({ datas ,buyItem,setBuyItem }) => {
 
                     <input 
                      onClick={()=> setActiveTab("cart")}
-                    type="radio" name="my_tabs_6" className="tab text-2xl font-bold" aria-label={`Cart(${buyItem.length})`} />
+                    type="radio" name="my_tabs_6" className="  tab text-2xl font-bold" aria-label={`Cart(${buyItem.length})`} />
 
 
 
@@ -42,7 +42,7 @@ const Carts = ({ datas ,buyItem,setBuyItem }) => {
             </div>
             }
            {
-           activeTab === "cart" && <BuyCart></BuyCart>
+           activeTab === "cart" && <BuyCart buyItem={buyItem} setBuyItem={setBuyItem}></BuyCart>
            }
 
         </div>
